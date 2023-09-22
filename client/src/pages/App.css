@@ -8,3 +8,17 @@ body, html {
   background: #1b2838;
   color: #fff;
 }
+
+.saleContainer{
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 850px) {
+  .saleContainer{
+    justify-content: center;
+  }
+}
