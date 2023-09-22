@@ -4,6 +4,7 @@
   font-family: "Inter", sans-serif;
 }
 
-body {
+body, html {
   background: #1b2838;
+  color: #fff;
 }

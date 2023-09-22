@@ -1,3 +1,4 @@
+import SaleCard from "../components/cards/saleCard/saleCard";
 import Container from "../components/container/container";
 import Subtitle from "../components/forms/subtitle/subtitle";
 import Nav from "../components/nav/Nav";
@@ -10,6 +11,9 @@ const App = () => {
       
       <Container>
         <Subtitle>promoções</Subtitle>
+        <Container>
+          <SaleCard></SaleCard>
+        </Container>
       </Container>
  
     </div>
