@@ -4,12 +4,13 @@
   font-family: "Inter", sans-serif;
 }
 
-body, html {
+body,
+html {
   background: #1b2838;
   color: #fff;
 }
 
-.saleContainer{
+.saleContainer {
   margin-top: 20px;
   display: flex;
   justify-content: space-between;
@@ -17,8 +18,19 @@ body, html {
   flex-wrap: wrap;
 }
 
+.gameSession {
+  margin: 5em 0;
+}
+
+.gameContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.3em;
+  margin-top: 1.3em;
+}
+
 @media (max-width: 850px) {
-  .saleContainer{
+  .saleContainer {
     justify-content: center;
   }
 }

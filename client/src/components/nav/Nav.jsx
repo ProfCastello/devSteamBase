@@ -1,6 +1,6 @@
 import styles from "./Nav.module.css";
 import logo from "../../assets/logo.svg";
-import cart from "../../assets/cart.svg";
+import CartButton from "../cartButton/cartButton";
 
 const Nav = () => {
   return (
@@ -10,7 +10,7 @@ const Nav = () => {
         DevSteam
       </div>
       <input type="text" placeholder="Buscar" />
-      <img src={cart} alt="icone de carrinho de compra" width={"46"} />
+      <CartButton />
     </div>
   );
 };

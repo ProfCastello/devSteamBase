@@ -28,7 +28,7 @@ const SaleCard = ({ discount, fullPrice, title }) => {
 SaleCard.defaultProps = {
   discount: "50",
   fullPrice: "199.90",
-  title: "promoção",
+  title: "gameOver",
 };
 
 export default SaleCard;
