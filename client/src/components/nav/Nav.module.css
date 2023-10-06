@@ -7,7 +7,7 @@
   align-items: center;
 }
 
-.bar div {
+.bar .logo {
   color: #fff;
   display: flex;
   align-items: center;
@@ -22,12 +22,24 @@
 .bar input {
   background: #316282;
   color: #fff;
-  width: 400px;
+  min-width: 400px;
   height: 40px;
   border: none;
+  outline: 0;
   padding: 0 20px;
 }
 
 .bar input::placeholder {
   color: #c7c7c7;
+  font-style: italic;
+}
+
+@media (max-width: 770px) {
+  .bar {
+    padding: 0 20px;
+  }
+
+  .bar input {
+    min-width: auto;
+  }
 }

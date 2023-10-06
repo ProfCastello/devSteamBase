@@ -1,7 +1,7 @@
 import Button from "../../forms/button/button";
 import styles from "./saleCard.module.css";
 
-const SaleCard = ({ discount, fullPrice, title }) => {
+const SaleCard = ({ discount, fullPrice, title, onAdd }) => {
   return (
     <div className={styles.saleCard}>
       <img
@@ -15,11 +15,18 @@ const SaleCard = ({ discount, fullPrice, title }) => {
         <div className={styles.priceCard}>
           <div>-{discount}%</div>
           <div>
-            <p>R${fullPrice}</p>
-            <h4>R${(fullPrice - fullPrice * (discount / 100)).toFixed(2)}</h4>
+            <p>R${fullPrice.toFixed(2).replace(".", ",")}</p>
+            <h4>
+              R$
+              {(fullPrice - fullPrice * (discount / 100))
+                .toFixed(2)
+                .replace(".", ",")}
+            </h4>
           </div>
         </div>
-        <Button>Adicionar ao carrinho</Button>
+        <Button fullwidth onClick={onAdd}>
+          Adicionar ao carrinho
+        </Button>
       </div>
     </div>
   );
